@@ -32,7 +32,6 @@ export function Home() {
     return (
         <div class="home">
             <div class="event-form-container">
-                <h1>Event Manager</h1>
                 <form onSubmit={handleSubmit} class="event-form">
                     <div class="form-group">
                         <label htmlFor="title">Event Title:</label>
@@ -60,7 +59,7 @@ export function Home() {
             </div>
 
             <div class="events-container">
-                <h2>Saved Events</h2>
+                <h1>WHEN</h1>
                 <div class="event-list">
                     {events.map(event => (
                         <div key={event.id} class="event-card">
